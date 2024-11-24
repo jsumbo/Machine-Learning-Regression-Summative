@@ -27,7 +27,7 @@ class _LoanPredictorScreenState extends State<LoanPredictorScreen> {
   String? prediction;
 
   Future<void> predictRecipients() async {
-    final url = Uri.parse('https://<your-heroku-app>.herokuapp.com/predict');
+    final url = Uri.parse('https://ml-summative-9b0c4737c339.herokuapp.com/predict');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},
