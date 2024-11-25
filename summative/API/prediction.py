@@ -7,7 +7,6 @@ import numpy as np
 with open("best_model.pkl", "rb") as file:
     model = pickle.load(file)
 
-# FastAPI setup
 app = FastAPI()
 
 # Define the input schema
